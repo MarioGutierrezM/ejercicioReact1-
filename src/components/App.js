@@ -22,7 +22,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header title="React Example" items={items}/>
+        <Header title="Sport's Shop" items={items}/>
         <Content body={children} />
         <Footer copyrigth="&copy; Mario Gtz 2018"/>
       </div>

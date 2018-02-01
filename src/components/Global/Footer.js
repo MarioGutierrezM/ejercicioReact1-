@@ -17,9 +17,7 @@ class Footer extends Component {
     const { copyrigth = '&copy; React 2018' } = this.props;
     return (
       <div className="Footer">
-        <hr/> 
           <p> {copyrigth} </p>
-        <hr/>
       </div>
     );
   }
