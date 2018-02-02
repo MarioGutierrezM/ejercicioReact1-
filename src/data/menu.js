@@ -8,6 +8,14 @@ export default [
         url: '/products'
     },
     {
+        title: 'Orders',
+        url: '/orders'
+    },
+    {
+        title: 'Admin',
+        url: '/admin'
+    },
+    {
         title: 'About Us',
         url: '/about'
     },

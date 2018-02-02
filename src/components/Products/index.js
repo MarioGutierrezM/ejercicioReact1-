@@ -4,7 +4,7 @@ import superagent from 'superagent';
 import { Link } from "react-router-dom";
 
 
-class Home extends Component {
+class Products extends Component {
 
     constructor() {
         super();
@@ -48,7 +48,7 @@ class Home extends Component {
                     { this.state.data.map(
                         (item, key) => {
                             return (
-                                <div className="card" key={key}>
+                                <div className="card " key={key}>
                                     <img className="card-img-top imgMed" src={item.imageUrl} alt="Card img cap" />
                                     <div className="card-body">
                                         <h3 className="card-title">{item.name}</h3>
@@ -57,7 +57,9 @@ class Home extends Component {
                                         </h5>
                                     </div>
                                     <div>
-                                        <Link to={`/product/${item._id}`}><button type="button" className="btn btn-primary btn-outline-primary  btn-block"><i className="fas fa-info-circle"></i> Details</button></Link>
+                                        <Link to={`/product/${item._id}`}>
+                                            <button type="button" className="btn btn-primary btn-outline-primary  btn-block"><i className="fas fa-info-circle"></i> Details</button>
+                                        </Link>
                                         <button type="button" className="btn btn-secondary btn-outline-success btn-block"><i className="fas fa-cart-plus"></i> Add to Shopping Cart</button>
                                     </div>
                                 </div>
@@ -70,4 +72,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Products;

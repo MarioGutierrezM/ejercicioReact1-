@@ -54,29 +54,29 @@ class Home extends Component {
                 </div>
                 <br />
                 <div className="container">
-                    <div class="card-group">
-                        <div class="card">
-                            <img class="card-img-top" src={"https://pbs.twimg.com/profile_images/951796620085157888/P5KMCsC2_400x400.jpg"} alt="Card img cap" />
-                            <div class="card-body">
-                                <h5 class="card-title">Adidas</h5>
-                                <p class="card-text">We have the best brands of the market. You can find a lot of diferent sport products, as Sneakers, Jerseys, Soccers boots, balls, and others kinds of products.</p>
-                                <p class="card-text"><small class="text-muted">The Best Products</small></p>
+                    <div className="card-group">
+                        <div className="card">
+                            <img className="card-img-top" src={"https://pbs.twimg.com/profile_images/951796620085157888/P5KMCsC2_400x400.jpg"} alt="Card img cap" />
+                            <div className="card-body">
+                                <h5 className="card-title">Adidas</h5>
+                                <p className="card-text">We have the best brands of the market. You can find a lot of diferent sport products, as Sneakers, Jerseys, Soccers boots, balls, and others kinds of products.</p>
+                                <p className="card-text"><small className="text-muted">The Best Products</small></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top" src={"http://fullhdwall.com/wp-content/uploads/2017/07/Super-Nike-Photo.jpg"} alt="Card img cap" />
-                            <div class="card-body">
-                                <h5 class="card-title">Nike</h5>
-                                <p class="card-text">We have the best brands of the market. You can find a lot of diferent sport products, as Sneakers, Jerseys, Soccers boots, balls, and others kinds of products.</p>
-                                <p class="card-text"><small class="text-muted">The Best Prices</small></p>
+                        <div className="card">
+                            <img className="card-img-top" src={"http://fullhdwall.com/wp-content/uploads/2017/07/Super-Nike-Photo.jpg"} alt="Card img cap" />
+                            <div className="card-body">
+                                <h5 className="card-title">Nike</h5>
+                                <p className="card-text">We have the best brands of the market. You can find a lot of diferent sport products, as Sneakers, Jerseys, Soccers boots, balls, and others kinds of products.</p>
+                                <p className="card-text"><small className="text-muted">The Best Prices</small></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top" src={"https://i.pinimg.com/736x/5b/08/8c/5b088c292d43398073c3fd6bfc9c01a5--asafa-powell-logo-design.jpg"} alt="Card imag cap" />
-                            <div class="card-body">
-                                <h5 class="card-title">Puma</h5>
-                                <p class="card-text">We have the best brands of the market. You can find a lot of diferent sport products, as Sneakers, Jerseys, Soccers boots, balls, and others kinds of products.</p>
-                                <p class="card-text"><small class="text-muted">The Best Brands</small></p>
+                        <div className="card">
+                            <img className="card-img-top" src={"https://i.pinimg.com/736x/5b/08/8c/5b088c292d43398073c3fd6bfc9c01a5--asafa-powell-logo-design.jpg"} alt="Card imag cap" />
+                            <div className="card-body">
+                                <h5 className="card-title">Puma</h5>
+                                <p className="card-text">We have the best brands of the market. You can find a lot of diferent sport products, as Sneakers, Jerseys, Soccers boots, balls, and others kinds of products.</p>
+                                <p className="card-text"><small className="text-muted">The Best Brands</small></p>
                             </div>
                         </div>
                     </div>

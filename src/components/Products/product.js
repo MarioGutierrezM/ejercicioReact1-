@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import superagent from 'superagent';
 
-class Home extends Component {
+class Product extends Component {
 
     constructor() {
         super();
@@ -41,13 +41,13 @@ class Home extends Component {
                             <div className="card-body">
                                 <h3 className="card-title">{this.state.data.name}</h3><br/>
                                 <h5 className="card-text">
-                                    <i class="fas fa-info"></i>  Description: <small className="text-muted">{this.state.data.description}</small>
+                                    <i className="fas fa-info"></i>  Description: <small className="text-muted">{this.state.data.description}</small>
                                 </h5>
                                 <h5 className="card-text">
                                     <i className="fas fa-dollar-sign"></i>  Price: <small className="text-muted">{this.state.data.price}</small>
                                 </h5>
                                 <h5 className="card-text">
-                                    <i class="fas fa-tag"></i> Category: <small className="text-muted">{this.state.data.category}</small><br/>
+                                    <i className="fas fa-tag"></i> Category: <small className="text-muted">{this.state.data.category}</small><br/>
                                 </h5>
                             </div>
                             <div>
@@ -63,4 +63,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Product;

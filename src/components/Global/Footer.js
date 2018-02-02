@@ -1,15 +1,15 @@
 //Dependencies
 import React, { Component } from 'react';
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 
 //Assets
 import './css/Footer.css';
 
 class Footer extends Component {
   //Validar que un string venga en copyrigth
-  static propTypes = {
-    copyrigth: PropTypes.string.isRequired
-  };
+  // static propTypes = {
+  //   copyrigth: PropTypes.string.isRequired
+  // };
 
   render() {
     //si no encuentra algun valor en props, tomara el string por defecto
@@ -17,7 +17,7 @@ class Footer extends Component {
     //const { copyrigth = '&copy; iTexico 2018' } = this.props;
     return (
       <div className="Footer">
-          <h5> &copy; iTexico 2018   <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-linkedin"></i> </h5>
+          <h5> &copy; iTexico 2018   <i className="fab fa-facebook-square"></i> <i className="fab fa-twitter-square"></i> <i className="fab fa-linkedin"></i> </h5>
       </div>
     );
   }

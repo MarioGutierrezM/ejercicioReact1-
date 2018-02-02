@@ -4,6 +4,10 @@ import React, { Component } from 'react';
 //Assets
 import './css/Content.css';
 
+
+// ---------------------------------
+//  IGNORE THIS FILE
+// ---------------------------------
 class Content extends Component {
   constructor() {
     super(); //con super tendremos acceso a "this"
