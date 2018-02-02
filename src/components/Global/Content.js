@@ -13,7 +13,7 @@ class Content extends Component {
   render() {
     const { body } = this.props;
     return (
-      <div className="container">
+      <div>
         {body}
       </div>
     );

@@ -5,4 +5,7 @@
     background-color: black;
     color: azure;
     height: 50px;
+    margin-top: 10px;
+    position: absolute;
+    padding: 10px;
 }

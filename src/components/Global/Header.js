@@ -15,24 +15,37 @@ class Header extends Component {
 
   render() {
     //console.log(this.props);
-    const {title, items}= this.props;
+    const { title, items } = this.props;
     return (
-      <div className="Header">
-        <div className="Logo">
-          <img src={logo} alt="logo" />
-          <h1>{title}</h1>
+      <nav className="navbar navbar-dark bg-dark">
+        <span className="navbar-brand" >
+          <img src={logo} width="30" height="30" className="d-inline-block align-top" alt="" />
+            {title}
+        </span>
+        <ul className="Menu">
+             {
+               items && items.map(
+                 (item, key) => <li key={key}> <Link to={item.url}> {item.title} </Link></li>
+               )
+             }
+           </ul>
+      </nav>
+      // <div className="Header">
+      //   <div className="Logo">
+      //     <img src={logo} alt="logo" />
+      //     <h1>{title}</h1>
 
-          <ul className="Menu">
-            {
-              items && items.map(
-                (item, key) => <li key={key}> <Link to={item.url}> {item.title} </Link></li>
-              )
-            }
-          </ul>
+      //     <ul className="Menu">
+      //       {
+      //         items && items.map(
+      //           (item, key) => <li key={key}> <Link to={item.url}> {item.title} </Link></li>
+      //         )
+      //       }
+      //     </ul>
 
-        </div>
-      </div>
-    );
+      //   </div>
+      // </div>
+      );
   }
 }
 

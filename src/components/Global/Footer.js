@@ -14,10 +14,10 @@ class Footer extends Component {
   render() {
     //si no encuentra algun valor en props, tomara el string por defecto
     //recibe la informacion que es mandada desde APP en props
-    const { copyrigth = '&copy; React 2018' } = this.props;
+    //const { copyrigth = '&copy; iTexico 2018' } = this.props;
     return (
       <div className="Footer">
-          <p> {copyrigth} </p>
+          <h5> &copy; iTexico 2018   <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-linkedin"></i> </h5>
       </div>
     );
   }

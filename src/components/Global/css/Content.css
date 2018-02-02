@@ -6,3 +6,19 @@
 .imgMed {
   height: 350px;
 }
+
+.imgBig {
+  height: 500px;
+}
+
+.posCent {
+  padding-top: 100px;
+  padding-right: 160px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.imgBan {
+  height: 700px;
+  
+}

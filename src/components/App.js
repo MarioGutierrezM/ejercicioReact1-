@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <Header title="Sport's Shop" items={items}/>
         <Content body={children} />
-        <Footer copyrigth="&copy; Mario Gtz 2018"/>
+        <Footer />
       </div>
     );
   }
