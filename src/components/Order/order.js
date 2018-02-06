@@ -1,6 +1,6 @@
 //Depndencies
 import React, { Component } from "react";
-import superagent from 'superagent';
+import OrderController from '../../controllers/orderController';
 
 class Order extends Component {
 
@@ -16,14 +16,11 @@ class Order extends Component {
         let id = this.props.match.params.id;
         console.log("order id: ", id);
         const url = `http://localhost:3000/api/order/${id}`;
-        superagent
-            .get(url)
-            .then(res => {
-                this.setState({
-                    data: res.body
-                })
-                console.log("Specific Order: ",this.state.data);
-            }).catch(err => console.log(err));
+        OrderController.getOrder(url, res => {
+            this.setState({
+                data: res.body
+            })
+        })
     }
 
     render() {
@@ -39,10 +36,10 @@ class Order extends Component {
                             <span className="text-muted"> {this.state.data.client_id ? this.state.data.client_id.name : ''} </span> 
                         </h5>
                         <h5 className="card-title">Father's Last Name: 
-                            <span className="text-muted">{this.state.data.client_id ? this.state.data.client_id.lastnamefa : ''} </span>
+                            <span className="text-muted"> {this.state.data.client_id ? this.state.data.client_id.lastnamefa : ''} </span>
                         </h5>
                         <h5 className="card-title">Mother's Last Name: 
-                            <span className="text-muted">{this.state.data.client_id ? this.state.data.client_id.lastnamemo : ''} </span>
+                            <span className="text-muted"> {this.state.data.client_id ? this.state.data.client_id.lastnamemo : ''} </span>
                         </h5>
                     </div>
                 </div>
@@ -60,13 +57,12 @@ class Order extends Component {
                                 <h5 className="card-title">Description: 
                                     <span className="text-muted"> {product.description} </span> 
                                 </h5>
-                                <h5 className="card-title">price: 
+                                <h5 className="card-title">Price: 
                                     <span className="text-muted"> {product.price} </span> 
                                 </h5>
                                 <h5 className="card-title">Quantity: 
-                                    {//<span className="text-muted"> {this.state.data.products ? this.state.data.products[key].quantity : ''} </span> 
-                                        product.quantity
-                                    }
+                                    <span className="text-muted"> {product.quantity} </span>
+                                    {/*<span className="text-muted"> {this.state.data.products ? this.state.data.products[key].quantity : ''} </span> */ }
                                 </h5>
                             </div>
                         );

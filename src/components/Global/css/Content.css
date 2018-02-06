@@ -16,6 +16,10 @@
   height: 700px;
 }
 
+.imgSmall {
+  height: 100px;
+}
+
 /* center something at product card */
 .posCent {
   padding-top: 100px;
@@ -38,3 +42,14 @@
    border-color: #d4edda;
 }
 
+/* custom the delete modal style */
+.listSmall {
+  text-align: center;
+}
+.listCenter {
+  padding-top: 35px;
+}
+
+.modal-color-danger {
+  background-color: #f8d7da;
+}

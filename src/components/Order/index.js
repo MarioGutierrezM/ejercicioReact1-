@@ -1,7 +1,7 @@
 //Depndencies
 import React, { Component } from "react";
-import superagent from 'superagent';
 import { Link } from "react-router-dom";
+import OrderController from "../../controllers/orderController";
 
 
 class Orders extends Component {
@@ -16,14 +16,11 @@ class Orders extends Component {
 
     componentDidMount() {
         const url = 'http://localhost:3000/api/order';
-        superagent
-            .get(url)
-            .then(res => {
-                console.log(res.body);
-                this.setState({
-                    data: res.body
-                })
-            }).catch(err => console.log(err));
+        OrderController.getAllOrders(url, res => {
+            this.setState({
+                data: res.body
+            })
+        });
     }
 
     render() {

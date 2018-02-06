@@ -1,6 +1,6 @@
 //Depndencies
 import React, { Component } from "react";
-import superagent from 'superagent';
+import ProductController from "../../controllers/productController";
 
 class Product extends Component {
 
@@ -16,14 +16,11 @@ class Product extends Component {
         console.log(this.props.match.params.id);
         let id = this.props.match.params.id;
         const url = `http://localhost:3000/api/product/${id}`;
-        superagent
-            .get(url)
-            .then(res => {
-                console.log(res.body);
-                this.setState({
-                    data: res.body
-                })
-            }).catch(err => console.log(err));
+        ProductController.getProduct(url, res => {
+            this.setState({
+                data: res.body
+            })
+        })
     }
 
     render() {

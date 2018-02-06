@@ -15,37 +15,26 @@ class Header extends Component {
 
   render() {
     //console.log(this.props);
-    const { title, items } = this.props;
+    const { title } = this.props;
     return (
-      <nav className="navbar navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <span className="navbar-brand" >
           <img src={logo} width="30" height="30" className="d-inline-block align-top" alt="" />
-            {title}
+          {title}
         </span>
-        <ul className="Menu">
-             {
-               items && items.map(
-                 (item, key) => <li key={key}> <Link to={item.url}> {item.title} </Link></li>
-               )
-             }
-           </ul>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav Menu">
+            <li className="nav-item"> <Link to={'/'}> Home </Link> </li>
+            <li className="nav-item"> <Link to={'/products'}> Products </Link> </li>
+            <li className="nav-item"> <Link to={'/orders'}> Orders </Link> </li>
+            <li className="nav-item"> <Link to={'/admin'}> Admin </Link> </li>
+          </ul>
+        </div>
       </nav>
-      // <div className="Header">
-      //   <div className="Logo">
-      //     <img src={logo} alt="logo" />
-      //     <h1>{title}</h1>
-
-      //     <ul className="Menu">
-      //       {
-      //         items && items.map(
-      //           (item, key) => <li key={key}> <Link to={item.url}> {item.title} </Link></li>
-      //         )
-      //       }
-      //     </ul>
-
-      //   </div>
-      // </div>
-      );
+    );
   }
 }
 
