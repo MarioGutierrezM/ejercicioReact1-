@@ -3,6 +3,7 @@
   width: 90%;
 }
 
+/* sizes of images */
 .imgMed {
   height: 350px;
 }
@@ -11,6 +12,11 @@
   height: 500px;
 }
 
+.imgBan {
+  height: 700px;
+}
+
+/* center something at product card */
 .posCent {
   padding-top: 100px;
   padding-right: 160px;
@@ -18,7 +24,17 @@
   padding-left: 50px;
 }
 
-.imgBan {
-  height: 700px;
-  
+
+/* custom the modal style */
+.modal-color-success {
+  background-color: #d4edda;
 }
+
+.input-green {
+  border-color: #d4edda;
+}
+.input-green:focus{
+   background-color: #d4edda;
+   border-color: #d4edda;
+}
+
