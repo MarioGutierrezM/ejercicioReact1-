@@ -1,7 +1,5 @@
 //Depndencies
 import React, { Component } from "react";
-//import superagent from 'superagent';
-//import { Link } from "react-router-dom";
 import ClientController from "../../controllers/clientController";
 
 
@@ -110,16 +108,16 @@ class ClientCreate extends Component {
                 <div className="alert alert-success" role="alert">
                     <div>
                         {/*Button trigger modal */}
-                        <button type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#createClientModal">
                             Create a client
                         </button>
 
                         {/*Modal */}
-                        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal fade" id="createClientModal" tabIndex="-1" role="dialog" aria-labelledby="createClientModalLabel" aria-hidden="true">
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
                                     <div className="modal-header modal-color-success">
-                                        <h5 className="modal-title" id="exampleModalLabel">Create a client</h5>
+                                        <h5 className="modal-title" id="createClientModalLabel">Create a Client</h5>
                                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

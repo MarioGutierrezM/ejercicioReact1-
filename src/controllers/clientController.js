@@ -12,5 +12,36 @@ export default {
         .then(res => {
             console.log('NewClient', res.body);
         }).catch(err => console.log(err));
+    },
+
+    getAllClients: (url, cb) => {
+        return superagent
+        .get(url)
+        .then(res => {
+            console.log(res.body);
+            cb(res);
+        })
+        .catch(err => console.log(err));
+    },
+
+    deleteClient: (url) => {
+        return superagent
+        .delete(url)
+        .then(res => console.log("client deleted"))
+        .catch(err => console.log(err));
+    },
+
+    clearList: (id, array, cb) => {
+        let x = 0;
+        var idTemp = 0;
+        var newData = [];
+        for( x in array){
+            idTemp = array[x]._id;
+            let data = array[x];
+            if(id !== idTemp ){
+                newData.push(data);
+                cb(newData);
+            }
+        }
     }
 };

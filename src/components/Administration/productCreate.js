@@ -1,7 +1,5 @@
 //Depndencies
 import React, { Component } from "react";
-//import superagent from 'superagent';
-//import { Link } from "react-router-dom";
 import ProductController from "../../controllers/productController";
 
 class ProductCreate extends Component {
@@ -124,16 +122,16 @@ class ProductCreate extends Component {
                 <div className="alert alert-success" role="alert">
                     <div>
                         {/*Button trigger modal */}
-                        <button type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#createProductModal">
                             Create a Product
                         </button>
 
                         {/*Modal */}
-                        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal fade" id="createProductModal" tabIndex="-1" role="dialog" aria-labelledby="createProductModalLabel" aria-hidden="true">
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
                                     <div className="modal-header modal-color-success">
-                                        <h5 className="modal-title" id="exampleModalLabel">Create a Product</h5>
+                                        <h5 className="modal-title" id="createProductModalLabel">Create a Product</h5>
                                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

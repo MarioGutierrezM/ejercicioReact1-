@@ -49,6 +49,9 @@
 .listCenter {
   padding-top: 35px;
 }
+.listLeft {
+  text-align: left;
+}
 
 .modal-color-danger {
   background-color: #f8d7da;
