@@ -42,7 +42,7 @@ class Products extends Component {
                                     </h5>
                                 </div>
                                 <div>
-                                    <Link to={`/product/${item._id}`}>
+                                    <Link to={`/product/${item._id}`} className="withoutLink">
                                         <button type="button" className="btn btn-primary btn-outline-primary  btn-block"><i className="fas fa-info-circle"></i> Details</button>
                                     </Link>
                                     <button type="button" className="btn btn-secondary btn-outline-success btn-block"><i className="fas fa-cart-plus"></i> Add to Shopping Cart</button>

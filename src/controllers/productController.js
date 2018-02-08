@@ -27,7 +27,7 @@ export default {
         return superagent
         .get(url)
         .then(res => {
-            console.log(res.body);
+            console.log("Get Product", res.body);
             cb(res);
         }).catch(err => console.log(err));
     },
@@ -37,6 +37,18 @@ export default {
         .delete(url)
         .then(res=> {
             console.log("Produc deleted");
+        })
+        .catch(err => console.log(err));
+    },
+
+    putProduct: (url, body, cb) => {
+        return superagent
+        .put(url)
+        .set('Accept', 'application/json')
+        .send(body)
+        .then(res => {
+            console.log("product modified", res.body);
+            cb();
         })
         .catch(err => console.log(err));
     },

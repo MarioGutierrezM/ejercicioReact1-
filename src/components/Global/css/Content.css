@@ -20,6 +20,13 @@
   height: 100px;
 }
 
+.imgSmall2 {
+  height: 145px;
+}
+
+.imgMedWidth {
+  width: 240px;
+}
 /* center something at product card */
 .posCent {
   padding-top: 100px;
@@ -55,4 +62,30 @@
 
 .modal-color-danger {
   background-color: #f8d7da;
+}
+
+/* custom form to modify a product */
+.card-color-warning {
+  background-color: #fff3cd;
+}
+.input-yellow{
+  border-color: #ffeeba;
+}
+.input-yellow:focus{
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+/*  custom update bottom at administration page */
+.darkYellow {
+  color: rgb(122, 92, 15);
+}
+.darkYellow:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* custom of the details botton at prodcuts page */
+.withoutLink:hover  {
+  text-decoration: none;
 }

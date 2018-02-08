@@ -18,7 +18,7 @@ class ProductDelete extends Component {
     componentDidMount() {
     }
 
-    openModal(e){
+    openModal(e) {
         const url = 'http://localhost:3000/api/product/';
         ProductController.getAllProducts(url, res => {
             this.setState({
@@ -27,7 +27,7 @@ class ProductDelete extends Component {
         });
     }
 
-    deleteProduct(e){
+    deleteProduct(e) {
         let urlToDelete = `http://localhost:3000/api/product/${e.target.value}`;
         ProductController.deleteProduct(urlToDelete);
 
@@ -61,23 +61,27 @@ class ProductDelete extends Component {
                                 </div>
                                 <div className="modal-body">
                                     <ul className="list-group">
-                                    {
-                                        this.state.data.map((product, key) => {
-                                            return (
-                                                <li className="list-group-item" key={key}>
-                                                    <div className="row">
-                                                        <div className="col-md-4 listSmall"> <img className="imgSmall" src={product.imageUrl} alt=""/> </div>
-                                                        <div className="col-md-4 listSmall listCenter">
-                                                            Name: {product.name}
+                                        {
+                                            this.state.data.map((product, key) => {
+                                                return (
+                                                    <li className="list-group-item" key={key}>
+                                                        <div className="row">
+                                                            <div className="col-md-4 listSmall"> <img className="imgSmall2" src={product.imageUrl} alt="" /> </div>
+                                                            <div className="col-md-4 listSmall listLeft">
+                                                                Name: {product.name}<br />
+                                                                Description: {product.description}<br />
+                                                                Category: {product.category}<br />
+                                                                Price: {product.price}<br />
+                                                                Stock: {product.stock}
+                                                            </div>
+                                                            <div className="col-md-4 listSmall listCenter">
+                                                                <button className="btn btn-outline-danger" value={product._id} onClick={this.deleteProduct}> Delete </button>
+                                                            </div>
                                                         </div>
-                                                        <div className="col-md-4 listSmall listCenter">
-                                                            <button className="btn btn-outline-danger" value={product._id} onClick={this.deleteProduct}> Delete </button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            )
-                                        })
-                                    }
+                                                    </li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </div>
                                 <div className="modal-footer modal-color-danger">

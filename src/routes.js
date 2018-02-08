@@ -13,6 +13,7 @@ import Product from "./components/Products/product";
 import Orders from "./components/Order";
 import Order from "./components/Order/order";
 import Administration from "./components/Administration";
+import UpdateProduct from "./components/Administration/productUpdateForm";
 //Como todos los archivos se llamaron index, no es necesario escribirlos en la ruta de importacion
 
 const AppRoutes = () =>
@@ -26,6 +27,7 @@ const AppRoutes = () =>
             <Route exact path="/admin" component={Administration} />
             <Route exact path="/orders" component={Orders} />
             <Route exact path="/order/:id" component={Order} />
+            <Route exact path="/admin/updateProduct/:id" component={UpdateProduct} />
             <Route component={Page404} />
         </Switch>
     </App>;

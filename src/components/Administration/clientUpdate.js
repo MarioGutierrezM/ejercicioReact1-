@@ -11,9 +11,6 @@ class ClientUpdate extends Component {
         //super();
 
         //con bind se optiene todo el objeto this de la clase
-        // this.handleInputChanged = this.handleInputChanged.bind(this);
-        // this.postClient = this.postClient.bind(this);
-        // this.clearClient = this.clearClient.bind(this);
     //}
 
     componentDidMount() {
@@ -24,8 +21,16 @@ class ClientUpdate extends Component {
         return (
             <div>
                 <div className="alert alert-warning" role="alert">
-                    Modify a client
+                    <button className="btn btn-outline-warning darkYellow" type="button" data-toggle="collapse" data-target="#clientUpd" aria-expanded="false" aria-controls="clientUpd">
+                        Update a Client
+                    </button>
+                    <div className="collapse" id="clientUpd">
+                        <div className="card card-body">
+                            clinetssss
+                        </div>
+                    </div>
                 </div>
+
             </div>
         );
     }
