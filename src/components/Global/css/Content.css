@@ -75,6 +75,9 @@
   background-color: #fff3cd;
   border-color: #ffeeba;
 }
+.imgCenter {
+  text-align: center;
+}
 
 /*  custom update bottom at administration page */
 .darkYellow {

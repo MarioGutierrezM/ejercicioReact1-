@@ -139,7 +139,7 @@ class ProductUpdateModal extends Component {
                                                 <h5 className="card-text">ImageUrl: <span className="text-muted"> {this.state.data.imageUrl}</span></h5>
                                             </li>
                                             <li className="list-group-item">
-                                                <h5 className="card-text">Image: <img className="text-muted imgMedWidth" src={this.state.data.imageUrl} alt=""/></h5>
+                                                <h5 className="card-text imgCenter"><img className="text-muted imgMedWidth" src={this.state.data.imageUrl} alt=""/></h5>
                                             </li>
                                         </ul>
                                     </div>

@@ -31,6 +31,28 @@ export default {
         .catch(err => console.log(err));
     },
 
+    putClient: (url,body, cb) => {
+        return superagent
+        .put(url)
+        .set('Accept', 'application/json')
+        .send(body)
+        .then(res => {
+            console.log("put client", res.body);
+            cb();
+        })
+        .catch(err => console.log(err));
+    },
+
+    getClient: (url, cb) => {
+        return superagent
+        .get(url)
+        .then(res => {
+            console.log("get client",res.body);
+            cb(res);
+        })
+        .catch(err => console.log(err));
+    },
+
     clearList: (id, array, cb) => {
         let x = 0;
         var idTemp = 0;

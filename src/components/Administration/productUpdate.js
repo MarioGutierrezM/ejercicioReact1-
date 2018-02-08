@@ -55,7 +55,9 @@ class ProductUpdate extends Component {
                                                 Stock: {product.stock}
                                             </div>
                                             <div className="col-md-4 listSmall listCenter">
-                                               <button className="btn btn-outline-warning darkYellow" > <Link to={`/admin/updateProduct/${product._id}`} className="darkYellow"> Modify </Link> </button>
+                                                <Link to={`/admin/updateProduct/${product._id}`} className="darkYellow">
+                                                    <button className="btn btn-outline-warning darkYellow" >  Modify </button>
+                                                </Link>
                                             </div>
                                         </div>
                                     </li>
