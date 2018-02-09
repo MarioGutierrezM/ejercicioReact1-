@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import productController from "../../controllers/productController";
+import OrderController from "../../controllers/orderController";
 
 
 class Products extends Component {
@@ -10,8 +11,11 @@ class Products extends Component {
         super();
 
         this.state = {
-            data: []
+            data: [],
+            newOrder: [],
+            quantity: 0
         }
+        
     }
 
     componentDidMount() {
@@ -23,11 +27,27 @@ class Products extends Component {
         });
     }
 
+    addToCart(e){
+        console.log("added", e.target.value);
+        OrderController.addProduct(e.target.value, this.state.newOrder, this.state.quantity, res => {
+            this.setState({
+                newOrder: res
+            })
+        });
+        this.props.getPreOrder(this.state.newOrder);
+    }
+
+    handleNumber(e){
+        this.setState({
+            quantity: e.target.value
+        })
+    }
+
     render() {
         return (
             <div className="container">
                 <br />
-                <h1>Products</h1>
+                <h1><i className="fas fa-tags"></i> Products</h1>
                 <hr/>
 
                 <div className="card-columns">
@@ -43,9 +63,20 @@ class Products extends Component {
                                 </div>
                                 <div>
                                     <Link to={`/product/${item._id}`} className="withoutLink">
-                                        <button type="button" className="btn btn-primary btn-outline-primary  btn-block"><i className="fas fa-info-circle"></i> Details</button>
+                                        <button type="button" className="btn btn-primary btn-outline-primary  btn-block">
+                                            <i className="fas fa-info-circle"></i> Details
+                                        </button>
                                     </Link>
-                                    <button type="button" className="btn btn-secondary btn-outline-success btn-block"><i className="fas fa-cart-plus"></i> Add to Shopping Cart</button>
+                                    <div className="row btnAndCount">
+                                        <div className="col-md-3 btnAndCount">
+                                            <input className="form-control border-green" type="number" max="10" min="1" onChange={e => this.handleNumber(e)}/>
+                                        </div>
+                                        <div className="col-md-9 btnAndCount">
+                                            <button type="button" onClick={e => this.addToCart(e)} value={item._id} className="btn btn-secondary btn-outline-success btn-block">
+                                                <i className="fas fa-cart-plus"></i> Add 
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         );

@@ -22,7 +22,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header title="Sport's Shop" items={items}/>
+        <Header title="Sport's Shop" items={items}/> 
         <Content body={children} />
         <Footer />
       </div>

@@ -3,6 +3,30 @@
   width: 90%;
 }
 
+/*  custom the home page */
+.blackContent{
+  background-color: #080808c9;
+  border: 4px solid black;
+  border-radius: .50rem;
+}
+
+/* custom products page */
+.btnAndCount{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.border-green{
+  border: 1px solid #28a745;
+}
+
+.border-green:focus{
+  border: 1px solid #28a745;
+  background-color: #28a7464f;
+}
+
 /* sizes of images */
 .imgMed {
   height: 350px;

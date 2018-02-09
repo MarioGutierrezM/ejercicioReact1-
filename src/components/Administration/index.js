@@ -15,7 +15,7 @@ class Admin extends Component {
         return (
             <div className="container">
                 <br />
-                <h1>Administration</h1>
+                <h1><i className="fas fa-edit"></i>  Administration</h1>
                 <hr />
 
                 <ProductAdmin></ProductAdmin>

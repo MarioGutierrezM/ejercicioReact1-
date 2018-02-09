@@ -20,5 +20,15 @@ export default {
             cb(res);
             console.log("Specific Order: ",res.body);
         }).catch(err => console.log(err));
+    },
+
+    addProduct: (id, newOrder, quantity, cb) => {
+        let newProduct = {
+            product: id,
+            quantity: quantity || 1
+        }
+        newOrder.push(newProduct);
+        console.log(newOrder);
+        cb(newOrder);
     }
 };

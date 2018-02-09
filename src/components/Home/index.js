@@ -27,19 +27,26 @@ class Home extends Component {
                         <div className="carousel-item active">
                             <img className="d-block w-100 imgBan" src={"http://blog.cpdfootball.de/wp-content/uploads/2016/07/manchester-united-adias-home-jersey-2017.jpg"} alt="First slide" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h1>We have the best brands of the market.</h1>
+                                <div className="alert blackContent" role="alert">
+                                    <h1>We have the best brands of the market.</h1>
+                                </div>
+
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img className="d-block w-100 imgBan" src={"https://s2-ssl.dmcdn.net/mD-Zd.jpg"} alt="Second slide" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h1>We have the best brands of the market.</h1>
+                                <div className="alert blackContent" role="alert">
+                                    <h1>We have the best brands of the market.</h1>
+                                </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img className="d-block w-100 imgBan" src={"https://global.rakuten.com/corp/fcbarcelona/assets/img/keyvisual/main_sp.jpg"} alt="Third slide" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h1>We have the best brands of the market.</h1>
+                                <div className="alert blackContent" role="alert">
+                                    <h1>We have the best brands of the market.</h1>
+                                </div>
                             </div>
                         </div>
                     </div>

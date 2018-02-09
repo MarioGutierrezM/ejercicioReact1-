@@ -27,7 +27,7 @@ class Orders extends Component {
         return (
             <div className="container">
                 <br />
-                <h1>Orders</h1>
+                <h1><i className="fas fa-tasks"></i> Orders</h1>
                 <hr />
 
                 {this.state.data.map((order, key) => {

@@ -36,3 +36,13 @@
 .Menu li a:hover{
   color: #EEE;
 }
+
+
+/* custom navbar menu */
+.nav-custom{
+  text-align: right;
+}
+
+.li-custom{
+  padding-right: 20px;
+}
