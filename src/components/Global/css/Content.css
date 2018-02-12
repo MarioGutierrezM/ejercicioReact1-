@@ -116,3 +116,18 @@
 .withoutLink:hover  {
   text-decoration: none;
 }
+
+/* custom of the list product at shopping cart page */
+.join-list{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.li-quantity{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.data-Center {
+  text-align: center;
+}

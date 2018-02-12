@@ -22,6 +22,7 @@ export default {
         }).catch(err => console.log(err));
     },
 
+    //to add a product with queantity to array
     addProduct: (id, newOrder, quantity, cb) => {
         let newProduct = {
             product: id,
@@ -30,5 +31,15 @@ export default {
         newOrder.push(newProduct);
         console.log(newOrder);
         cb(newOrder);
+    },
+
+    postOrder: (url, body) => {
+        return superagent
+        .post(url)
+        .set('Accept', 'application/json')
+        .send(body)
+        .then(res => {
+            console.log('NewOrder', res.body);
+        }).catch(err => console.log(err));
     }
 };

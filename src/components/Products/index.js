@@ -39,7 +39,7 @@ class Products extends Component {
 
     handleNumber(e){
         this.setState({
-            quantity: e.target.value
+            quantity: Number(e.target.value)
         })
     }
 
