@@ -109,7 +109,7 @@ class ClientCreate extends Component {
                     <div>
                         {/*Button trigger modal */}
                         <button type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#createClientModal">
-                            Create a client
+                            <i className="fas fa-plus"></i> Create a client
                         </button>
 
                         {/*Modal */}
@@ -117,7 +117,9 @@ class ClientCreate extends Component {
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
                                     <div className="modal-header modal-color-success">
-                                        <h5 className="modal-title" id="createClientModalLabel">Create a Client</h5>
+                                        <h5 className="modal-title" id="createClientModalLabel">
+                                            <i className="fas fa-plus"></i> Create a Client
+                                        </h5>
                                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -127,7 +129,14 @@ class ClientCreate extends Component {
                                         <form>
                                             <div className="form-group">
                                                 <label htmlFor="nameC">First Name</label>
-                                                <input type="text" className="form-control input-green" id="nameC" value={this.state.newClient.name} onChange={this.handleInputChanged} placeholder="Enter first name" />
+                                                <input 
+                                                    type="text" 
+                                                    className="form-control input-green" 
+                                                    id="nameC" 
+                                                    value={this.state.newClient.name} 
+                                                    onChange={this.handleInputChanged} 
+                                                    placeholder="Enter first name" 
+                                                />
                                             </div>
                                             <div className="form-group">
                                                 <label htmlFor="lastnameFC">Father's Last Name </label>

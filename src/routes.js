@@ -16,9 +16,8 @@ import Administration from "./components/Administration";
 import UpdateProduct from "./components/Administration/productUpdateForm";
 import UpdateClient from "./components/Administration/clientUpdateForm";
 import ShoppingCart from "./components/ShoppingCart";
-
-
 //Como todos los archivos se llamaron index, no es necesario escribirlos en la ruta de importacion
+
 var prueba = [];
 function getArray(preOrder){
     prueba = preOrder;

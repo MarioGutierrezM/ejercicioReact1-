@@ -34,7 +34,7 @@ class ClientUpdate extends Component {
             <div>
                 <div className="alert alert-warning" role="alert">
                     <button className="btn btn-outline-warning darkYellow" onClick={e => this.onOpen(e)} type="button" data-toggle="collapse" data-target="#clientUpd" aria-expanded="false" aria-controls="clientUpd">
-                        Update a Client
+                        <i className="fas fa-edit"></i> Update a Client
                     </button>
                     <div className="collapse" id="clientUpd">
                         <div className="card card-body">

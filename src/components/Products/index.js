@@ -15,7 +15,6 @@ class Products extends Component {
             newOrder: [],
             quantity: 0
         }
-        
     }
 
     componentDidMount() {
@@ -34,7 +33,7 @@ class Products extends Component {
                 newOrder: res
             })
         });
-        this.props.getPreOrder(this.state.newOrder);
+        this.props.getPreOrder(this.state.newOrder);//mandamos a padre
     }
 
     handleNumber(e){

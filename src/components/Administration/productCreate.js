@@ -123,7 +123,7 @@ class ProductCreate extends Component {
                     <div>
                         {/*Button trigger modal */}
                         <button type="button" className="btn btn-outline-success" data-toggle="modal" data-target="#createProductModal">
-                            Create a Product
+                            <i className="fas fa-plus"></i> Create a Product
                         </button>
 
                         {/*Modal */}
@@ -131,7 +131,9 @@ class ProductCreate extends Component {
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
                                     <div className="modal-header modal-color-success">
-                                        <h5 className="modal-title" id="createProductModalLabel">Create a Product</h5>
+                                        <h5 className="modal-title" id="createProductModalLabel">
+                                            <i className="fas fa-plus"></i> Create a Product
+                                        </h5>
                                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

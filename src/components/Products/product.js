@@ -1,6 +1,9 @@
 //Depndencies
 import React, { Component } from "react";
 import ProductController from "../../controllers/productController";
+import OrderController from "../../controllers/orderController";
+import { Link } from "react-router-dom";
+
 
 class Product extends Component {
 
@@ -36,7 +39,7 @@ class Product extends Component {
                         </div>
                         <div className="col-md-6 posCent">
                             <div className="card-body">
-                                <h3 className="card-title">{this.state.data.name}</h3><br/>
+                                <h3 className="card-title">{this.state.data.name}</h3><br />
                                 <h5 className="card-text">
                                     <i className="fas fa-info"></i>  Description: <small className="text-muted">{this.state.data.description}</small>
                                 </h5>
@@ -44,13 +47,15 @@ class Product extends Component {
                                     <i className="fas fa-dollar-sign"></i>  Price: <small className="text-muted">{this.state.data.price}</small>
                                 </h5>
                                 <h5 className="card-text">
-                                    <i className="fas fa-tag"></i> Category: <small className="text-muted">{this.state.data.category}</small><br/>
+                                    <i className="fas fa-tag"></i> Category: <small className="text-muted">{this.state.data.category}</small><br />
                                 </h5>
                             </div>
                             <div>
-                                <button type="button" className="btn btn-secondary btn-outline-success btn-block">
-                                    <i className="fas fa-cart-plus"></i> Add to Shopping Cart
-                                </button>
+                                <Link to={"/products"} className="withoutLink">
+                                    <button type="button" className="btn btn-outline-info btn-block">
+                                        <i className="fas fa-chevron-circle-left"></i> Back to the products
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

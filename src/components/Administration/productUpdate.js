@@ -35,7 +35,7 @@ class ProductUpdate extends Component {
             <div>
                 <div className="alert alert-warning" role="alert">
                     <button className="btn btn-outline-warning darkYellow" onClick={this.onOpen} type="button" data-toggle="collapse" data-target="#productUpd" aria-expanded="false" aria-controls="productUpd">
-                        Update a Product
+                        <i className="fas fa-edit"></i> Update a Product
                     </button>
                     <div className="collapse" id="productUpd">
                         <div className="card card-body">

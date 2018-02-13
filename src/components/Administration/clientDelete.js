@@ -46,7 +46,7 @@ class ClientDelete extends Component {
                 <div className="alert alert-danger" role="alert">
                     {/* <!-- Button trigger modal -->*/}
                     <button type="button" onClick={this.openModal} className="btn btn-outline-danger" data-toggle="modal" data-target="#deleteClientModal">
-                        Delete a Client
+                        <i className="fas fa-trash-alt"></i> Delete a Client
                     </button>
 
                     {/*<!-- Modal --> */}
@@ -54,7 +54,9 @@ class ClientDelete extends Component {
                         <div className="modal-dialog modal-dialog-centered" role="document">
                             <div className="modal-content">
                                 <div className="modal-header modal-color-danger">
-                                    <h5 className="modal-title" id="deleteClientModalLongTitle">Delete a Client</h5>
+                                    <h5 className="modal-title" id="deleteClientModalLongTitle">
+                                        <i className="fas fa-trash-alt"></i> Delete a Client
+                                    </h5>
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>

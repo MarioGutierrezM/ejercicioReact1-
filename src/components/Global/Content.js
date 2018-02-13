@@ -10,10 +10,6 @@ class Content extends Component {
     body: PropTypes.object.isRequired
   };
 
-  sendCart(){
-    console.log("mensajilo");
-    
-  }
 
   render() {
     const { body } = this.props;

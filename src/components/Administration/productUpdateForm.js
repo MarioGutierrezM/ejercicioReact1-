@@ -106,7 +106,7 @@ class ProductUpdateModal extends Component {
         return (
             <div className="container">
                 <br />
-                <h2>Modify a Product</h2>
+                <h2><i className="fas fa-edit"></i> Modify a Product</h2>
                 <hr />
 
                 <div className="card">

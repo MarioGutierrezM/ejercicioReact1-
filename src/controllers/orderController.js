@@ -33,13 +33,14 @@ export default {
         cb(newOrder);
     },
 
-    postOrder: (url, body) => {
+    postOrder: (url, body, cb) => {
         return superagent
         .post(url)
         .set('Accept', 'application/json')
         .send(body)
         .then(res => {
             console.log('NewOrder', res.body);
+                cb(res);
         }).catch(err => console.log(err));
     }
 };

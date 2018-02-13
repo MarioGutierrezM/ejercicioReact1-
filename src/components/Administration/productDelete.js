@@ -46,7 +46,7 @@ class ProductDelete extends Component {
                 <div className="alert alert-danger" role="alert">
                     {/* <!-- Button trigger modal -->*/}
                     <button type="button" onClick={this.openModal} className="btn btn-outline-danger" data-toggle="modal" data-target="#deleteProductModalCenter">
-                        Delete a Product
+                        <i className="fas fa-trash-alt"></i> Delete a Product
                     </button>
 
                     {/*<!-- Modal --> */}
@@ -54,7 +54,9 @@ class ProductDelete extends Component {
                         <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div className="modal-content">
                                 <div className="modal-header modal-color-danger">
-                                    <h5 className="modal-title" id="deleteProductModalLongTitle">Delete a Product</h5>
+                                    <h5 className="modal-title" id="deleteProductModalLongTitle">
+                                        <i className="fas fa-trash-alt"></i> Delete a Product
+                                    </h5>
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
